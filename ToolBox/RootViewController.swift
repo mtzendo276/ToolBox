@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RootViewController: UIViewController {
     
     // Initialize your table data
     let items = ["Item 1", "Item 2", "Item 3"]
@@ -31,36 +31,40 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Add the tableView to the view controller's view
         view.addSubview(tableView)
     }
-    
-    // MARK: - UITableViewDataSource
-
-        // Return the number of rows for the table
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return items.count
-        }
-
-        // Create and configure each cell
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            // Dequeue a reusable cell
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            
-            // Set the text for the cell from the items array
-            cell.textLabel?.text = items[indexPath.row]
-            
-            return cell
-        }
-
-        // MARK: - UITableViewDelegate
-        
-        // Add functionality when a cell is selected
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            // For example, print the name of the selected item
-            print("Selected \(items[indexPath.row])")
-            
-            // Deselect the row after it's been tapped
-            tableView.deselectRow(at: indexPath, animated: true)
-        }
-
 
 }
 
+// MARK: - UITableViewDelegate
+
+extension RootViewController: UITableViewDelegate {
+    
+    // Add functionality when a cell is selected
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // For example, print the name of the selected item
+        print("Selected \(items[indexPath.row])")
+        
+        // Deselect the row after it's been tapped
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+}
+
+// MARK: - UITableViewDataSource
+extension RootViewController: UITableViewDataSource {
+    
+    // Return the number of rows for the table
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    // Create and configure each cell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Dequeue a reusable cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        // Set the text for the cell from the items array
+        cell.textLabel?.text = items[indexPath.row]
+        
+        return cell
+    }
+    
+}
