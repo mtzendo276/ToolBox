@@ -9,14 +9,13 @@ import SwiftUI
 
 struct ShimmerEffectBox: View {
     
-    @State private var isAnimating = false
-    @State var startPoint: UnitPoint = .init(x: 0, y: 0)
-    @State var endPoint: UnitPoint = .init(x: 1, y: 1)
+    @State var startPoint: UnitPoint = .init(x: -1.8, y: -1.2)
+    @State var endPoint: UnitPoint = .init(x: 0, y: -0.2)
     
     private var gradientColors = [
-        Color.gray,
-        Color.clear,
-        Color.gray
+        Color(uiColor: .systemGray5),
+        Color(uiColor: .systemGray6),
+        Color(uiColor: .systemGray5)
     ]
     
     var body: some View {
@@ -24,9 +23,10 @@ struct ShimmerEffectBox: View {
                        startPoint: startPoint,
                        endPoint: endPoint)
         .onAppear {
-            withAnimation(.easeInOut(duration: 5)
+            withAnimation(.easeInOut(duration: 1)
                 .repeatForever(autoreverses: false)) {
-                    isAnimating.toggle()
+                    startPoint = .init(x: 1, y: 1)
+                    endPoint = .init(x: 2.2, y: 2.2)
                 }
         }
     }

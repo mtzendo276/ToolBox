@@ -10,11 +10,8 @@ import SwiftUI
 
 class RootViewController: UIViewController {
     
-    // Initialize your table data
     let items = ["Item 1", "Item 2", "Item 3"]
-    
-    // Create a UITableView instance
-    var tableView: UITableView!
+    private var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +28,6 @@ class RootViewController: UIViewController {
 }
 
 // MARK: - UITableViewDelegate
-
 extension RootViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
