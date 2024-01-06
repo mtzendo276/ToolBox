@@ -21,6 +21,8 @@
 		791F7AA62B480DAC005432F2 /* UIViewController+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7A982B480DAC005432F2 /* UIViewController+SwiftUI.swift */; };
 		791F7AA72B480DAC005432F2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7A992B480DAC005432F2 /* String+Extensions.swift */; };
 		791F7AA82B480DAC005432F2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7A9A2B480DAC005432F2 /* View.swift */; };
+		7940942C2B48FFF900ACC23F /* ShimmerLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940942B2B48FFF900ACC23F /* ShimmerLoadingView.swift */; };
+		7940942E2B490C7200ACC23F /* ShimmerEffectBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7940942D2B490C7200ACC23F /* ShimmerEffectBox.swift */; };
 		796958FF2B43DFE400A299C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796958FE2B43DFE400A299C8 /* AppDelegate.swift */; };
 		796959012B43DFE400A299C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959002B43DFE400A299C8 /* SceneDelegate.swift */; };
 		796959032B43DFE400A299C8 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959022B43DFE400A299C8 /* RootViewController.swift */; };
@@ -63,6 +65,8 @@
 		791F7A982B480DAC005432F2 /* UIViewController+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SwiftUI.swift"; sourceTree = "<group>"; };
 		791F7A992B480DAC005432F2 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		791F7A9A2B480DAC005432F2 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		7940942B2B48FFF900ACC23F /* ShimmerLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerLoadingView.swift; sourceTree = "<group>"; };
+		7940942D2B490C7200ACC23F /* ShimmerEffectBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffectBox.swift; sourceTree = "<group>"; };
 		796958FB2B43DFE400A299C8 /* ToolBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796958FE2B43DFE400A299C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		796959002B43DFE400A299C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +106,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		791F7A8C2B480D9B005432F2 /* SwiftUI-Extensions */ = {
+		791F7A8C2B480D9B005432F2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				791F7A952B480DAC005432F2 /* Array+Extensions.swift */,
@@ -120,7 +124,16 @@
 				791F7A982B480DAC005432F2 /* UIViewController+SwiftUI.swift */,
 				791F7A9A2B480DAC005432F2 /* View.swift */,
 			);
-			path = "SwiftUI-Extensions";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7940942A2B48FEE500ACC23F /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				7940942B2B48FFF900ACC23F /* ShimmerLoadingView.swift */,
+				7940942D2B490C7200ACC23F /* ShimmerEffectBox.swift */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		796958F22B43DFE400A299C8 = {
@@ -146,10 +159,11 @@
 		796958FD2B43DFE400A299C8 /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
-				791F7A8C2B480D9B005432F2 /* SwiftUI-Extensions */,
+				791F7A8C2B480D9B005432F2 /* Extensions */,
 				796958FE2B43DFE400A299C8 /* AppDelegate.swift */,
 				796959002B43DFE400A299C8 /* SceneDelegate.swift */,
 				796959022B43DFE400A299C8 /* RootViewController.swift */,
+				7940942A2B48FEE500ACC23F /* LoadingView */,
 				796959072B43DFE500A299C8 /* Assets.xcassets */,
 				796959092B43DFE500A299C8 /* LaunchScreen.storyboard */,
 				7969590C2B43DFE500A299C8 /* Info.plist */,
@@ -307,6 +321,7 @@
 				791F7A9E2B480DAC005432F2 /* UIPickerView+Extensions.swift in Sources */,
 				796959032B43DFE400A299C8 /* RootViewController.swift in Sources */,
 				791F7A9F2B480DAC005432F2 /* KeyboardReadable.swift in Sources */,
+				7940942E2B490C7200ACC23F /* ShimmerEffectBox.swift in Sources */,
 				791F7A9B2B480DAC005432F2 /* Binding+Extensions.swift in Sources */,
 				791F7AA82B480DAC005432F2 /* View.swift in Sources */,
 				791F7AA72B480DAC005432F2 /* String+Extensions.swift in Sources */,
@@ -315,6 +330,7 @@
 				791F7A9C2B480DAC005432F2 /* Encodable+Extensions.swift in Sources */,
 				791F7AA62B480DAC005432F2 /* UIViewController+SwiftUI.swift in Sources */,
 				791F7AA52B480DAC005432F2 /* BoundsPreferenceKey.swift in Sources */,
+				7940942C2B48FFF900ACC23F /* ShimmerLoadingView.swift in Sources */,
 				791F7AA02B480DAC005432F2 /* Transition+Extensions.swift in Sources */,
 				791F7AA32B480DAC005432F2 /* Array+Extensions.swift in Sources */,
 				796958FF2B43DFE400A299C8 /* AppDelegate.swift in Sources */,
