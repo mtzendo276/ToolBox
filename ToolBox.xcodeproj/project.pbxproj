@@ -34,6 +34,7 @@
 		796959162B43DFE500A299C8 /* ToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959152B43DFE500A299C8 /* ToolBoxTests.swift */; };
 		796959202B43DFE500A299C8 /* ToolBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */; };
 		796959222B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */; };
+		79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF522B4A46EB0016CB2D /* TagLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		7969591B2B43DFE500A299C8 /* ToolBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITests.swift; sourceTree = "<group>"; };
 		796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79F0EF522B4A46EB0016CB2D /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				793AD4822B4A2DF100097DD9 /* TagsContentView.swift */,
 				793AD4842B4A2E5700097DD9 /* Tag.swift */,
 				793AD4882B4A2F5100097DD9 /* TagField.swift */,
+				79F0EF522B4A46EB0016CB2D /* TagLayout.swift */,
 			);
 			path = TagsField;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				796959032B43DFE400A299C8 /* RootViewController.swift in Sources */,
 				791F7A9F2B480DAC005432F2 /* KeyboardReadable.swift in Sources */,
 				793AD4852B4A2E5700097DD9 /* Tag.swift in Sources */,
+				79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */,
 				7940942E2B490C7200ACC23F /* ShimmerEffectBox.swift in Sources */,
 				793AD4892B4A2F5100097DD9 /* TagField.swift in Sources */,
 				791F7A9B2B480DAC005432F2 /* Binding+Extensions.swift in Sources */,

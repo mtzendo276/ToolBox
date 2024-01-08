@@ -12,7 +12,7 @@ struct TagField: View {
     @Binding var tags: [Tag]
     
     var body: some View {
-        HStack {
+        TagLayout(alignment: .leading) {
             ForEach($tags) { $tag in
                 TagView(tag: $tag, allTags: $tags)
                     .onChange(of: tag.value) { oldValue, newValue in
@@ -110,6 +110,7 @@ fileprivate struct BackSpaceListnerTextField: UIViewRepresentable {
     
     func makeUIView(context: Context) -> CustomTextField {
         let textField = CustomTextField()
+        textField.textAlignment = .center
         textField.delegate = context.coordinator
         textField.onBackPressed = onBackPressed
         textField.placeholder = hint
