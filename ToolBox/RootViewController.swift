@@ -36,8 +36,10 @@ extension RootViewController: UITableViewDelegate {
         let vc = UIViewController()
 //        let loadingView = ShimmerLoadingView()
 //        vc.addSubSwiftUIView(loadingView, to: vc.view)
-        let tagsView = TagsContentView()
-        vc.addSubSwiftUIView(tagsView, to: vc.view)
+//        let tagsView = TagsContentView()
+//        vc.addSubSwiftUIView(tagsView, to: vc.view)
+        let toastView = ToastContentView()
+        vc.addSubSwiftUIView(toastView, to: vc.view)
         navigationController?.pushViewController(vc, animated: true)
         
     }
