@@ -32,7 +32,6 @@ struct RootView<Content: View>: View {
     
 }
 
-
 fileprivate class PassthroughWindow: UIWindow {
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
@@ -66,7 +65,6 @@ class Toast {
 struct ToastItem: Identifiable {
     
     let id: UUID = .init()
-    
     var title: String
     var symbol: String?
     var tint: Color
@@ -82,7 +80,6 @@ enum ToastTime: CGFloat {
     case long = 3.5
     
 }
-
 
 fileprivate struct ToastGroup: View {
     
@@ -154,7 +151,6 @@ fileprivate struct ToastView: View {
                     if (endY + velocityY) > 100 {
                         removeToast()
                     }
-                    
                 })
         )
         .onAppear {
