@@ -10,6 +10,7 @@ import SwiftUI
 
 class RootViewController: UIViewController {
     
+    let sections = ["UI"]
     let items = ["Item 1", "Item 2", "Item 3"]
     private var tableView: UITableView!
 
@@ -50,11 +51,11 @@ extension RootViewController: UITableViewDelegate {
 extension RootViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section: \(section)"
+        return "\(sections[section])"
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return sections.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
