@@ -34,6 +34,7 @@
 		796959162B43DFE500A299C8 /* ToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959152B43DFE500A299C8 /* ToolBoxTests.swift */; };
 		796959202B43DFE500A299C8 /* ToolBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */; };
 		796959222B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */; };
+		79A336392B527F87007FC3AE /* ParallaxScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A336382B527F87007FC3AE /* ParallaxScrollView.swift */; };
 		79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF522B4A46EB0016CB2D /* TagLayout.swift */; };
 		79F0EF562B4B9B700016CB2D /* ToastContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF552B4B9B700016CB2D /* ToastContentView.swift */; };
 		79F0EF582B4B9C120016CB2D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF572B4B9C120016CB2D /* Toast.swift */; };
@@ -88,6 +89,7 @@
 		7969591B2B43DFE500A299C8 /* ToolBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITests.swift; sourceTree = "<group>"; };
 		796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79A336382B527F87007FC3AE /* ParallaxScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollView.swift; sourceTree = "<group>"; };
 		79F0EF522B4A46EB0016CB2D /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		79F0EF552B4B9B700016CB2D /* ToastContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastContentView.swift; sourceTree = "<group>"; };
 		79F0EF572B4B9C120016CB2D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				796958FE2B43DFE400A299C8 /* AppDelegate.swift */,
 				796959002B43DFE400A299C8 /* SceneDelegate.swift */,
 				796959022B43DFE400A299C8 /* RootViewController.swift */,
+				79A336372B527E70007FC3AE /* ParallaxScrollEffect */,
 				79F0EF542B4B9B340016CB2D /* ToastView */,
 				7940942A2B48FEE500ACC23F /* LoadingView */,
 				793AD4812B4A2DA500097DD9 /* TagsField */,
@@ -211,6 +214,14 @@
 				796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */,
 			);
 			path = ToolBoxUITests;
+			sourceTree = "<group>";
+		};
+		79A336372B527E70007FC3AE /* ParallaxScrollEffect */ = {
+			isa = PBXGroup;
+			children = (
+				79A336382B527F87007FC3AE /* ParallaxScrollView.swift */,
+			);
+			path = ParallaxScrollEffect;
 			sourceTree = "<group>";
 		};
 		79F0EF542B4B9B340016CB2D /* ToastView */ = {
@@ -370,6 +381,7 @@
 				791F7AA62B480DAC005432F2 /* UIViewController+SwiftUI.swift in Sources */,
 				791F7AA52B480DAC005432F2 /* BoundsPreferenceKey.swift in Sources */,
 				7940942C2B48FFF900ACC23F /* ShimmerLoadingView.swift in Sources */,
+				79A336392B527F87007FC3AE /* ParallaxScrollView.swift in Sources */,
 				791F7AA02B480DAC005432F2 /* Transition+Extensions.swift in Sources */,
 				791F7AA32B480DAC005432F2 /* Array+Extensions.swift in Sources */,
 				796958FF2B43DFE400A299C8 /* AppDelegate.swift in Sources */,

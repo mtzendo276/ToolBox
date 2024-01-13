@@ -4,7 +4,7 @@ import UIKit
 
 extension UIViewController {
 
-    func addSubSwiftUIView<Content>(_ swiftUIView: Content, to view: UIView) where Content : View {
+    func addSubSwiftUIView<Content>(_ swiftUIView: Content) where Content : View {
         let hostingController = UIHostingController(rootView: swiftUIView)
         addChild(hostingController)
         view.addSubview(hostingController.view)
@@ -12,11 +12,11 @@ extension UIViewController {
         // Set up constraints
         NSLayoutConstraint.activate([
             // Full width
-            hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            hostingController.view.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
             // Full height
-            hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
-            hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            hostingController.view.topAnchor.constraint(equalTo: self.view.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
         hostingController.didMove(toParent: self)
     }
