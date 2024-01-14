@@ -39,6 +39,7 @@
 		79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF522B4A46EB0016CB2D /* TagLayout.swift */; };
 		79F0EF562B4B9B700016CB2D /* ToastContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF552B4B9B700016CB2D /* ToastContentView.swift */; };
 		79F0EF582B4B9C120016CB2D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF572B4B9C120016CB2D /* Toast.swift */; };
+		79F95EAF2B53DEBB00BB18B4 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		79F0EF522B4A46EB0016CB2D /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		79F0EF552B4B9B700016CB2D /* ToastContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastContentView.swift; sourceTree = "<group>"; };
 		79F0EF572B4B9C120016CB2D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				796958FE2B43DFE400A299C8 /* AppDelegate.swift */,
 				796959002B43DFE400A299C8 /* SceneDelegate.swift */,
 				796959022B43DFE400A299C8 /* RootViewController.swift */,
+				79F95EAD2B53DE1600BB18B4 /* DropDownPicker */,
 				79A336372B527E70007FC3AE /* ParallaxScrollEffect */,
 				79F0EF542B4B9B340016CB2D /* ToastView */,
 				7940942A2B48FEE500ACC23F /* LoadingView */,
@@ -234,6 +237,14 @@
 				79F0EF572B4B9C120016CB2D /* Toast.swift */,
 			);
 			path = ToastView;
+			sourceTree = "<group>";
+		};
+		79F95EAD2B53DE1600BB18B4 /* DropDownPicker */ = {
+			isa = PBXGroup;
+			children = (
+				79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */,
+			);
+			path = DropDownPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +394,7 @@
 				791F7A9C2B480DAC005432F2 /* Encodable+Extensions.swift in Sources */,
 				791F7AA62B480DAC005432F2 /* UIViewController+SwiftUI.swift in Sources */,
 				791F7AA52B480DAC005432F2 /* BoundsPreferenceKey.swift in Sources */,
+				79F95EAF2B53DEBB00BB18B4 /* DropDownView.swift in Sources */,
 				7940942C2B48FFF900ACC23F /* ShimmerLoadingView.swift in Sources */,
 				79A336392B527F87007FC3AE /* ParallaxScrollView.swift in Sources */,
 				791F7AA02B480DAC005432F2 /* Transition+Extensions.swift in Sources */,
