@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DropDownContentView: View {
     
-    @State private var selection: String?
+    @State private var selection1: String?
+    @State private var selection2: String?
     
     var body: some View {
         NavigationStack {
@@ -21,7 +22,16 @@ struct DropDownContentView: View {
                         "Snapchat",
                         "TikTok"
                     ],
-                    selection: $selection
+                    anchor: .bottom,
+                    selection: $selection1
+                )
+                DropDownView(hint: "Select", options: [
+                        "Short Form",
+                        "Long Form",
+                        "Both"
+                    ],
+                    anchor: .top,
+                    selection: $selection2
                 )
             }
             .navigationTitle("Dropdown Picker")

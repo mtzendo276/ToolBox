@@ -19,11 +19,17 @@ struct DropDownView: View {
     @State private var showOptions: Bool = false
     
 //    @Environment(\.colorScheme) private var scheme
+    @SceneStorage("drop_down_zindex") private var index = 1000.0
+    @State private var zIndex: Double = 1000.0
     
     var body: some View {
         GeometryReader {
             let size = $0.size
             VStack(spacing: 0) {
+                if showOptions && anchor == .top {
+                    OptionView()
+                }
+                
                 HStack(spacing: 0) {
                     Text(selection ?? hint)
                         .foregroundStyle(selection == nil ? .gray : .primary)
@@ -31,19 +37,31 @@ struct DropDownView: View {
                     Image(systemName: "chevron.down")
                         .font(.title3)
                         .foregroundColor(.gray)
+                        .rotationEffect(.init(degrees: showOptions ? -180 : 0))
+                }
+                .padding(.horizontal, 15)
+                .frame(width: size.width, height: size.height)
+                .background(.white)
+                .contentShape(.rect)
+                .onTapGesture {
+                    index += 1
+                    zIndex = index
+                    withAnimation {
+                        showOptions.toggle()
+                    }
+                }
+                .zIndex(10)
+                
+                if showOptions && anchor == .bottom {
+                    OptionView()
                 }
             }
-            .padding(.horizontal, 15)
-            .frame(width: size.width, height: size.height)
-            .contentShape(.rect)
-            .onTapGesture {
-                withAnimation {
-                    showOptions.toggle()
-                }
-            }
+            .clipped()
             .background(Color.white.shadow(.drop(color: .primary.opacity(15),radius: 4)), in: .rect(cornerRadius: cornerRadius))
+            .frame(height: size.height, alignment: anchor == .top ? .bottom : .top)
         }
         .frame(width: maxWidth, height: 50)
+        .zIndex(zIndex)
     }
     
     @ViewBuilder
@@ -55,6 +73,7 @@ struct DropDownView: View {
                         .lineLimit(1)
                     Spacer(minLength: 0)
                     Image(systemName: "checkmark")
+                        .font(.caption)
                         .opacity(selection == option ? 1 : 0)
                 }
                 .foregroundStyle(selection == option ?  Color.primary : Color.gray)
@@ -69,6 +88,9 @@ struct DropDownView: View {
                 }
             }
         }
+        .padding(.horizontal, 15)
+        .padding(.vertical, 5)
+        .transition(.move(edge: anchor == .top ? .bottom : .top))
     }
     
     enum Anchor {
