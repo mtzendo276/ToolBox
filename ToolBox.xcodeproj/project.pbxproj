@@ -39,6 +39,7 @@
 		79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF522B4A46EB0016CB2D /* TagLayout.swift */; };
 		79F0EF562B4B9B700016CB2D /* ToastContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF552B4B9B700016CB2D /* ToastContentView.swift */; };
 		79F0EF582B4B9C120016CB2D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF572B4B9C120016CB2D /* Toast.swift */; };
+		79F15DF22B5529E700F3321D /* DropDownContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F15DF12B5529E700F3321D /* DropDownContentView.swift */; };
 		79F95EAF2B53DEBB00BB18B4 /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		79F0EF522B4A46EB0016CB2D /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		79F0EF552B4B9B700016CB2D /* ToastContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastContentView.swift; sourceTree = "<group>"; };
 		79F0EF572B4B9C120016CB2D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		79F15DF12B5529E700F3321D /* DropDownContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownContentView.swift; sourceTree = "<group>"; };
 		79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				79F95EAE2B53DEBB00BB18B4 /* DropDownView.swift */,
+				79F15DF12B5529E700F3321D /* DropDownContentView.swift */,
 			);
 			path = DropDownPicker;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				791F7AA82B480DAC005432F2 /* View.swift in Sources */,
 				79F0EF562B4B9B700016CB2D /* ToastContentView.swift in Sources */,
 				791F7AA72B480DAC005432F2 /* String+Extensions.swift in Sources */,
+				79F15DF22B5529E700F3321D /* DropDownContentView.swift in Sources */,
 				791F7AA42B480DAC005432F2 /* CGPoint+Extensions.swift in Sources */,
 				791F7AA22B480DAC005432F2 /* Text+Extensions.swift in Sources */,
 				791F7A9C2B480DAC005432F2 /* Encodable+Extensions.swift in Sources */,
