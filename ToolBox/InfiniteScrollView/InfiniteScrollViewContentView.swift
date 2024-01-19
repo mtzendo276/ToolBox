@@ -7,9 +7,17 @@
 
 import SwiftUI
 
+struct SampleItem: Identifiable {
+    
+    var id: UUID = .init()
+    var color: Color
+    
+}
+
+
 struct InfiniteScrollViewContentView: View {
     
-    @State private var items: [Item] = [.red,
+    @State private var items: [SampleItem] = [.red,
         .blue,
         .green,
         .yellow,
