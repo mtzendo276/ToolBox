@@ -26,7 +26,8 @@ struct ContentView: View {
                                                       "Toast",
                                                       "Parallax ScrollView",
                                                       "Drop Down",
-                                                      "Infinite ScrollView"])]
+                                                      "Infinite ScrollView",
+                                                      "Parallax Carousel"])]
 
     var body: some View {
 //        NavigationSplitView {
@@ -95,6 +96,8 @@ struct ContentView: View {
                 DropDownContentView()
             case 5:
                 InfiniteScrollViewContentView()
+            case 6:
+                CarouselContentView()
             default:
                 Text("Default")
             }
