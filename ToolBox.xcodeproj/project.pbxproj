@@ -34,6 +34,9 @@
 		796959162B43DFE500A299C8 /* ToolBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959152B43DFE500A299C8 /* ToolBoxTests.swift */; };
 		796959202B43DFE500A299C8 /* ToolBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */; };
 		796959222B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */; };
+		7975929C2B5A1D700087C430 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975929B2B5A1D700087C430 /* Item.swift */; };
+		7975929E2B5A1DE00087C430 /* InfiniteScrollViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975929D2B5A1DE00087C430 /* InfiniteScrollViewContentView.swift */; };
+		797592A02B5A1F640087C430 /* InfiniteScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7975929F2B5A1F640087C430 /* InfiniteScrollView.swift */; };
 		79A336392B527F87007FC3AE /* ParallaxScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A336382B527F87007FC3AE /* ParallaxScrollView.swift */; };
 		79A3363B2B528A46007FC3AE /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A3363A2B528A46007FC3AE /* CardModel.swift */; };
 		79F0EF532B4A46EB0016CB2D /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F0EF522B4A46EB0016CB2D /* TagLayout.swift */; };
@@ -92,6 +95,9 @@
 		7969591B2B43DFE500A299C8 /* ToolBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7969591F2B43DFE500A299C8 /* ToolBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITests.swift; sourceTree = "<group>"; };
 		796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7975929B2B5A1D700087C430 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7975929D2B5A1DE00087C430 /* InfiniteScrollViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollViewContentView.swift; sourceTree = "<group>"; };
+		7975929F2B5A1F640087C430 /* InfiniteScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteScrollView.swift; sourceTree = "<group>"; };
 		79A336382B527F87007FC3AE /* ParallaxScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxScrollView.swift; sourceTree = "<group>"; };
 		79A3363A2B528A46007FC3AE /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		79F0EF522B4A46EB0016CB2D /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 				796958FE2B43DFE400A299C8 /* AppDelegate.swift */,
 				796959002B43DFE400A299C8 /* SceneDelegate.swift */,
 				796959022B43DFE400A299C8 /* RootViewController.swift */,
+				7975929A2B5A1CC60087C430 /* InfiniteScrollView */,
 				79F95EAD2B53DE1600BB18B4 /* DropDownPicker */,
 				79A336372B527E70007FC3AE /* ParallaxScrollEffect */,
 				79F0EF542B4B9B340016CB2D /* ToastView */,
@@ -221,6 +228,16 @@
 				796959212B43DFE500A299C8 /* ToolBoxUITestsLaunchTests.swift */,
 			);
 			path = ToolBoxUITests;
+			sourceTree = "<group>";
+		};
+		7975929A2B5A1CC60087C430 /* InfiniteScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7975929B2B5A1D700087C430 /* Item.swift */,
+				7975929D2B5A1DE00087C430 /* InfiniteScrollViewContentView.swift */,
+				7975929F2B5A1F640087C430 /* InfiniteScrollView.swift */,
+			);
+			path = InfiniteScrollView;
 			sourceTree = "<group>";
 		};
 		79A336372B527E70007FC3AE /* ParallaxScrollEffect */ = {
@@ -390,6 +407,7 @@
 				791F7A9B2B480DAC005432F2 /* Binding+Extensions.swift in Sources */,
 				793AD4832B4A2DF100097DD9 /* TagsContentView.swift in Sources */,
 				791F7AA82B480DAC005432F2 /* View.swift in Sources */,
+				7975929C2B5A1D700087C430 /* Item.swift in Sources */,
 				79F0EF562B4B9B700016CB2D /* ToastContentView.swift in Sources */,
 				791F7AA72B480DAC005432F2 /* String+Extensions.swift in Sources */,
 				79F15DF22B5529E700F3321D /* DropDownContentView.swift in Sources */,
@@ -398,6 +416,7 @@
 				791F7A9C2B480DAC005432F2 /* Encodable+Extensions.swift in Sources */,
 				791F7AA62B480DAC005432F2 /* UIViewController+SwiftUI.swift in Sources */,
 				791F7AA52B480DAC005432F2 /* BoundsPreferenceKey.swift in Sources */,
+				797592A02B5A1F640087C430 /* InfiniteScrollView.swift in Sources */,
 				79F95EAF2B53DEBB00BB18B4 /* DropDownView.swift in Sources */,
 				7940942C2B48FFF900ACC23F /* ShimmerLoadingView.swift in Sources */,
 				79A336392B527F87007FC3AE /* ParallaxScrollView.swift in Sources */,
@@ -408,6 +427,7 @@
 				79A3363B2B528A46007FC3AE /* CardModel.swift in Sources */,
 				79F0EF582B4B9C120016CB2D /* Toast.swift in Sources */,
 				796959012B43DFE400A299C8 /* SceneDelegate.swift in Sources */,
+				7975929E2B5A1DE00087C430 /* InfiniteScrollViewContentView.swift in Sources */,
 				791F7A9D2B480DAC005432F2 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

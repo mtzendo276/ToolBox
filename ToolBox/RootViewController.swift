@@ -19,7 +19,9 @@ class RootViewController: UIViewController {
                                               items: ["Loading", 
                                                       "Tags",
                                                       "Toast",
-                                                      "Parallax ScrollView"])]
+                                                      "Parallax ScrollView",
+                                                      "Drop Down",
+                                                      "Infinite ScrollView"])]
     private var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -56,6 +58,12 @@ extension RootViewController: UITableViewDelegate {
                 vc.addSubSwiftUIView(toastView)
             case 3:
                 let scrollView = ParallaxScrollView()
+                vc.addSubSwiftUIView(scrollView)
+            case 4:
+                let dropDownView = DropDownContentView()
+                vc.addSubSwiftUIView(dropDownView)
+            case 5:
+                let scrollView = InfiniteScrollViewContentView()
                 vc.addSubSwiftUIView(scrollView)
             default:
                 break
