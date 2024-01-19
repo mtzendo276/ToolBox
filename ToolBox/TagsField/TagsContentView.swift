@@ -12,15 +12,10 @@ struct TagsContentView: View {
     @State private var tags: [Tag] = []
     
     var body: some View {
-        NavigationStack {
-            ScrollView(.vertical) {
-                VStack {
-                    TagField(tags: $tags)
-                }
-                .padding()
-            }
-            .navigationTitle("Tag Field")
+        VStack {
+            TagField(tags: $tags)
         }
+        .padding()
     }
     
 }
